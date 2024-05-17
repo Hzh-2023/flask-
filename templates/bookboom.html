@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookTable</title>
+    <script src="https://cdn.staticfile.net/vue/2.7.0/vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/book.css">
+    <link type="text/css" src ="{{url_for('static', filename = 'book.css')}}">
+
+</head>
+<body>
+    <div id="top">
+        <head><h1 >WCHAOLIMA</h1></head>
+        <button type="button" id="loginbutton" @click="showModal=!showModal">登录</button>
+        <div><p id="loginuser" >欢迎回来,{{username}}</p></div>
+        <div v-show="showModal">
+            <form method = "post" action ="#">
+                账户:<input type="text" name="user" v-model="user" required>
+                密码:<input type="text" name="password" v-model="password" required>
+                <input type="submit" value="登录">
+            </form>
+        </div>
+    </div>
+
+
+    <div id="box">
+        <div id="leftbox">
+            <div id="check">
+                <input type="text" class="input">
+                <button>搜索</button>
+            </div>
+            <ul id="leftboxul" type="none">
+                <li><div><button type="button" id="leftboxbutton">导</button></div></li>
+                <br>
+                <li><div><button type="button" id="leftboxbutton">航</button></div></li>
+                <br>
+                <li><div><button type="button" id="leftboxbutton">条</button></div></li>
+            </ul>
+        </div>
+
+        <div id="content"></div>
+    </div>
+
+
+    <script>
+        var top=new Vue({
+            el: '#top',
+            data: {
+                user:'',
+                password:'',
+                showModal:false,
+            },
+            methods:{
+                checkuserandpassword:function (){
+                    if (this.user=='' || this.password==''){
+                        alert("账号和密码都不能为空")
+                    }else{
+
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

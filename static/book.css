@@ -1,0 +1,128 @@
+*{
+    padding:0px;
+	margin:0px;
+}
+
+#top{
+    padding-top: 0;
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
+    border: 1px solid #000;
+}
+#loginbutton{
+    background-color:wheat;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    font-family: 黑体;
+    font-size: 15px;
+    box-shadow: 0px 0px 2px 2px rgb(255, 254, 254);
+    border: none;
+    width: 50px;
+    height: 25px;
+}
+#loginbutton:hover {
+    background-color:darkgrey;
+    color:bisque;
+    transition: background-color 0.3s; /*延时*/
+}
+
+
+#loginuser{
+    position: fixed;
+    top: 4px; /* 距离顶部的距离 */
+    left: 10px; /* 距离右侧的距离 */
+    background-color: black;
+    color: aliceblue;
+    padding: 0px;
+}
+
+
+
+#box{
+    display: flex;
+    /*align-items: left;*/
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000;
+    position: absolute;
+}
+
+
+
+
+#leftbox{
+    background-color:rgb(49, 48, 48);
+    background-attachment: fixed;
+    color: whitesmoke;
+    float: left;
+    width: 350px;
+    height: 100%;
+    border: 1px solid black;
+}
+#lefboxul{
+    font-size:60px;
+    margin-left:50px;
+    margin-top:100px;
+}
+#leftboxbutton{
+    margin-top: 20px;
+    width: 320px;
+    height: 40px;
+    border: none;
+    margin-left: 15px;
+    font-size:medium;
+    font-family: 黑体;
+    box-shadow: 0px 0px 2px 2px rgb(255, 254, 254);
+    border: none;
+}
+#leftboxbutton:hover{
+    background-color:darkgrey;
+    color:bisque;
+    transition: background-color 0.3s; /*延时*/
+}
+#check{
+    width:500px;
+    height:40px;
+    margin-left: 30px;
+}
+#check input{
+    float:left;
+    width:250px;
+    height:30px;
+    outline:none;
+    border:none;/*取消文本框内外边框*/
+}
+#check button{
+    float:left;
+    background-color: black;
+    width: 40px;
+    height:30px;
+    border: 2px black;
+    color: aliceblue;
+    outline:none;/*取消按钮边框轮廓*/
+    transition: background-color 0.3s; /*延时*/
+}
+#check button:hover{
+    color: black;
+    background-color:blanchedalmond;
+}
+
+
+
+
+#content{
+    background-color:whitesmoke;
+    width: 100%;
+    float: right;
+    border: 1px solid black;
+}
+
+
+
+
+
